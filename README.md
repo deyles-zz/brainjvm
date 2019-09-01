@@ -3,16 +3,16 @@ brainjvm
 
 ## What is brainjvm?
 
-BrainJVM is a simple [Brainfuck](http://en.wikipedia.org/wiki/Brainfuck) parser and compiler that generates java source code,
+BrainJVM is a simple [Brainf\*ck](http://en.wikipedia.org/wiki/Brainfuck) parser and compiler that generates java source code,
 as well as JVM byte code. The byte code assembler uses the Java 6 [JavaCompiler](http://docs.oracle.com/javase/6/docs/api/javax/tools/JavaCompiler.html) libraries
-as part of a two stage compilation pipeline (Brainfuck -> Java -> JVM byte code).
+as part of a two stage compilation pipeline (Brainf\*ck -> Java -> JVM byte code).
 
 ## How do I use it?
 
 The package includes output writer classes allowing you to write the resulting compiled
 code to a file on disk, memory as a byte array, a StringBuffer instance or to STDOUT.
 
-Below is an example compiling Brainfuck to Java source and writing it to the console:
+Below is an example compiling Brainf\*ck to Java source and writing it to the console:
 
 ```java
 package com.mypackage;
@@ -35,7 +35,7 @@ public class WriteJavaSource {
 
 ```
 
-Here's an example compiling Brainfuck to JVM byte code and writing it to a file:
+Here's an example compiling Brainf\*ck to JVM byte code and writing it to a file:
 
 ```java
 package com.mypackage;
@@ -63,12 +63,12 @@ want to know more about the inner workings of the API.
 
 ## Why?
 
-I dunno, why not? I got interested in screwing around with Brainfuck while writing
-[brainfuckjs](https://github.com/dan-eyles/brainfuckjs) and wanted to write a simple
+I dunno, why not? I got interested in screwing around with Brainf\*ck while writing
+[brainf\*ckjs](https://github.com/dan-eyles/brainfuckjs) and wanted to write a simple
 compiler instead of an interpreter.
 
 Originally I was planning on writing the assembler using [Apache BCEL](http://commons.apache.org/bcel/),
-but after playing around with it for a while I realized I was going to end up plowing way too many hours
+but after playing around with it for a while I realized I was going to end up ploughing way too many hours
 into the project and instead chose to use the [JavaCompiler](http://docs.oracle.com/javase/6/docs/api/javax/tools/JavaCompiler.html) package included in Java 6. BCEL is pretty neat,
 you should definitely check it out, I doubt you'll end up assembling more efficient byte code than the **javac** compiler though.
 
